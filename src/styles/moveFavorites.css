@@ -1,0 +1,13 @@
+.fav-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.favorite {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 1rem;
+    color: #fff;
+}

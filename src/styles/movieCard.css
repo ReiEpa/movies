@@ -1,0 +1,30 @@
+.movie-card {
+    color: #fff;
+    cursor: pointer;
+}
+.movie-card:hover{
+    transform: scale(1.05);
+}
+.movie-img{
+    position: relative;
+    width: 300px;
+}
+.movie-year{
+    position: absolute;
+    background-color: grey;
+    padding: 0.3rem;
+    top: 0.1rem;
+    right: 1.5rem;
+}
+.movie-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.movie-favorites {
+    text-align: center;
+    padding: 0.2rem;
+    width: 300px;
+    color: #fff;
+}

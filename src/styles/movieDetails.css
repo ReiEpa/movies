@@ -1,0 +1,57 @@
+.details {
+    padding: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.details-img {
+    position: relative;
+    width: 300px;
+}
+.details-year {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    padding: 0.3rem;
+    color: #fff;
+}
+.details-type {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    padding: 0.3rem;
+    color: #fff;
+}
+.details-title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go-back {
+    padding: 0.8rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.details-bottom {
+    width: fit-content;
+}
+.details-plot {
+    color: #fff;
+    margin: 0.5rem;
+}
+.details-span {
+    margin: 0.5rem;
+    color: rgb(175, 175, 175);
+    text-transform: uppercase;
+}
+.details-plot-text { 
+ text-decoration: underline;
+ font-size: 1.1rem;
+}
