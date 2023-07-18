@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/movieCard.css";
 import { MdFavorite } from "react-icons/md";
 
@@ -11,12 +11,14 @@ const MovieCard = ({ movie, onAddToFavorites }) => {
   };
 
   const addToFavorites = () => {
-    const favorites = JSON.parse(localStorage.getItem('favoriteMovies')) || [];
-    const isMovieInFavorites = favorites.some((favMovie) => favMovie.imdbID === movie.imdbID);
+    const favorites = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
+    const isMovieInFavorites = favorites.some(
+      (favMovie) => favMovie.imdbID === movie.imdbID
+    );
 
     if (!isMovieInFavorites) {
       favorites.push(movie);
-      localStorage.setItem('favoriteMovies', JSON.stringify(favorites));
+      localStorage.setItem("favoriteMovies", JSON.stringify(favorites));
       alert(`${movie.Title} has been added to favorites!`);
       onAddToFavorites();
     } else {
@@ -26,15 +28,15 @@ const MovieCard = ({ movie, onAddToFavorites }) => {
 
   return (
     <>
-      <div className='movie-card'>
-        <div onClick={goToDetails} className='movie-img'>
+      <div className="movie-card">
+        <div onClick={goToDetails} className="movie-img">
           <img src={movie.Poster} alt={movie.Poster} width="280px" />
-          <div className='movie-year'>{movie.Year}</div>
+          <div className="movie-year">{movie.Year}</div>
         </div>
-        <div className='movie-favorites' onClick={addToFavorites}>
+        <div className="movie-favorites" onClick={addToFavorites}>
           Add to favorites <MdFavorite />
         </div>
-        <div className='movie-title'>{movie.Title}</div>
+        <div className="movie-title">{movie.Title}</div>
       </div>
     </>
   );
